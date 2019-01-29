@@ -11,8 +11,6 @@ class App < Sinatra::Base
   post '/team' do
       puts params[:name]
 
-      original_string = params["string"]
-      reversed_string = original_string.reverse
     erb :team
   end
 
